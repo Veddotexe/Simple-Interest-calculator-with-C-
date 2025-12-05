@@ -1,0 +1,71 @@
+INCORRECT CODE
+//WAP to calculate SI
+#include <iostream>
+int main()
+{
+    int p,t;
+    float r,si;
+    cout <<"Enter the Principle amount"<<p;
+    cin >> p;
+    cout <<"Enter the Rate of Interest"<<r;
+    cin >> r;
+    cout <<"Enter the Time in years"<<t;
+    cin >> t;
+    si=(p*r*t)/100
+    cout<<"THE SIMPLE INTEREST IS";
+    cin << si;
+    getch();
+}
+CORRECT CODE (WITHOUT NAMESPACE.STD)
+#include <iostream>
+
+int main()
+{
+    int p, t;
+    float r, si;
+
+    std::cout << "Enter the Principal amount: ";
+    std::cin >> p;
+
+    std::cout << "Enter the Rate of Interest: ";
+    std::cin >> r;
+
+    std::cout << "Enter the Time in years: ";
+    std::cin >> t;
+
+    si = (p * r * t) / 100;
+
+    std::cout << "The Simple Interest is: " << si << std::endl;
+
+    return 0;
+}
+
+CORRECT CODE (WITH NAMESPACE.STD)
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int p, t;
+    float r, si;
+
+    cout << "Enter the Principal amount: ";
+    cin >> p;
+
+    cout << "Enter the Rate of Interest: ";
+    cin >> r;
+
+    cout << "Enter the Time in years: ";
+    cin >> t;
+
+    si = (p * r * t) / 100;
+
+    cout << "The Simple Interest is: " << si << endl;
+
+    return 0;
+}
+
+
+
+
